@@ -5,27 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TravelApp.Views"
         mc:Ignorable="d"
-        Icon="../Resources/Globe.png"
+        Icon="../Resources/Pictures/Globe.png"
         ResizeMode="NoResize"
-        Title="SignUp" Height="690" Width="450">
+        Title="SignUp" Height="800" Width="500">
     <StackPanel>
-        <Label FontSize="25">Name</Label>
-        <TextBox FontSize="30" Margin="10,0" Text="{Binding NewUser.Name}"/>
+        <Label FontSize="45" HorizontalAlignment="Center">Sign Up</Label>
+        
+        <Label FontSize="25" Margin="4">Name</Label>
+        <TextBox FontSize="30" Margin="10 0" Text="{Binding NewUser.Name}"/>
 
-        <Label FontSize="25">Surname</Label>
-        <TextBox FontSize="30" Margin="10,0" Text="{Binding NewUser.Surname}"/>
+        <Label FontSize="25" Margin="4">Surname</Label>
+        <TextBox FontSize="30" Margin="10 0" Text="{Binding NewUser.Surname}"/>
 
-        <Label FontSize="25">Phone</Label>
-        <TextBox FontSize="30" Margin="10,0" Text="{Binding NewUser.Phone}"/>
+        <Label FontSize="25" Margin="4">Phone</Label>
+        <TextBox FontSize="30" Margin="10 0" Text="{Binding NewUser.Phone}"/>
 
-        <Label FontSize="25">Email</Label>
-        <TextBox FontSize="30" Margin="10,0" Text="{Binding NewUser.Email}"/>
+        <Label FontSize="25" Margin="4">Email</Label>
+        <TextBox FontSize="30" Margin="10 0" Text="{Binding NewUser.Email}"/>
 
-        <Label FontSize="25">Login</Label>
-        <TextBox FontSize="30" Margin="10,0" Text="{Binding NewUser.Login}"/>
+        <Label FontSize="25" Margin="4">Login</Label>
+        <TextBox FontSize="30" Margin="10 0" Text="{Binding NewUser.Login}"/>
 
-        <Label FontSize="25">Password</Label>
-        <PasswordBox FontSize="30" Margin="10,0" x:Name="passSave"/>
+        <Label FontSize="25" Margin="4">Password</Label>
+        <PasswordBox FontSize="30" Margin="10 0" x:Name="passSave"/>
 
         <UniformGrid Rows="1" Columns="2">
             <Button FontSize="35" Margin="20" Command="{Binding CancelCommand}" Height="60">Cancel</Button>
