@@ -1,0 +1,36 @@
+﻿<Window x:Class="TravelApp.Views.SignUpPageView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TravelApp.Views"
+        mc:Ignorable="d"
+        Icon="../Resources/Globe.png"
+        ResizeMode="NoResize"
+        Title="SignUp" Height="690" Width="450">
+    <StackPanel>
+        <Label FontSize="25">Name</Label>
+        <TextBox FontSize="30" Margin="10,0" Text="{Binding NewUser.Name}"/>
+
+        <Label FontSize="25">Surname</Label>
+        <TextBox FontSize="30" Margin="10,0" Text="{Binding NewUser.Surname}"/>
+
+        <Label FontSize="25">Phone</Label>
+        <TextBox FontSize="30" Margin="10,0" Text="{Binding NewUser.Phone}"/>
+
+        <Label FontSize="25">Email</Label>
+        <TextBox FontSize="30" Margin="10,0" Text="{Binding NewUser.Email}"/>
+
+        <Label FontSize="25">Login</Label>
+        <TextBox FontSize="30" Margin="10,0" Text="{Binding NewUser.Login}"/>
+
+        <Label FontSize="25">Password</Label>
+        <PasswordBox FontSize="30" Margin="10,0" x:Name="passSave"/>
+
+        <UniformGrid Rows="1" Columns="2">
+            <Button FontSize="35" Margin="20" Command="{Binding CancelCommand}" Height="60">Cancel</Button>
+            <Button FontSize="35" Margin="20" Command="{Binding RegisterCommand}" Height="60"
+                    CommandParameter="{Binding ElementName=passSave}">Save</Button>
+        </UniformGrid>
+    </StackPanel>
+</Window>
